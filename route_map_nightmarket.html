@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c25e1b9ab7ff4a03aff8b92b7172e827 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c25e1b9ab7ff4a03aff8b92b7172e827" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c25e1b9ab7ff4a03aff8b92b7172e827 = L.map(
+                "map_c25e1b9ab7ff4a03aff8b92b7172e827",
+                {
+                    center: [25.0525, 121.5205],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a4f61173c1fb26a5323f487b33ec2a63 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c25e1b9ab7ff4a03aff8b92b7172e827);
+        
+    
+            var marker_9b628e8e2be18d41290266578f1c8828 = L.marker(
+                [25.0525, 121.5205],
+                {}
+            ).addTo(map_c25e1b9ab7ff4a03aff8b92b7172e827);
+        
+    
+            var icon_ff94e1d7a9d0e9fa2a16fccd08b9fa21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_9b628e8e2be18d41290266578f1c8828.setIcon(icon_ff94e1d7a9d0e9fa2a16fccd08b9fa21);
+        
+    
+        var popup_2ad36095050da53c7dfa5e2a81e6dee2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_faf397a065e930f737d039157debd717 = $(`<div id="html_faf397a065e930f737d039157debd717" style="width: 100.0%; height: 100.0%;">中山</div>`)[0];
+            popup_2ad36095050da53c7dfa5e2a81e6dee2.setContent(html_faf397a065e930f737d039157debd717);
+        
+
+        marker_9b628e8e2be18d41290266578f1c8828.bindPopup(popup_2ad36095050da53c7dfa5e2a81e6dee2)
+        ;
+
+        
+    
+    
+            var marker_a14701ab5312828a37482fd0c7845645 = L.marker(
+                [25.0621, 121.5196],
+                {}
+            ).addTo(map_c25e1b9ab7ff4a03aff8b92b7172e827);
+        
+    
+            var icon_94c9b3326cbc7f856f525e5f3da3dd8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_a14701ab5312828a37482fd0c7845645.setIcon(icon_94c9b3326cbc7f856f525e5f3da3dd8d);
+        
+    
+        var popup_7d4608bc5d6fde4a774ad8e556eb6ee5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e46d47fb9cd4d1d3ed197ae56fbbff0e = $(`<div id="html_e46d47fb9cd4d1d3ed197ae56fbbff0e" style="width: 100.0%; height: 100.0%;">民權西路</div>`)[0];
+            popup_7d4608bc5d6fde4a774ad8e556eb6ee5.setContent(html_e46d47fb9cd4d1d3ed197ae56fbbff0e);
+        
+
+        marker_a14701ab5312828a37482fd0c7845645.bindPopup(popup_7d4608bc5d6fde4a774ad8e556eb6ee5)
+        ;
+
+        
+    
+    
+            var marker_21aace47cfd1f6b609ec6a2b91f7d9dc = L.marker(
+                [25.0882, 121.5251],
+                {}
+            ).addTo(map_c25e1b9ab7ff4a03aff8b92b7172e827);
+        
+    
+            var icon_87fbe7b5df160bec7137b62c039c0920 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_21aace47cfd1f6b609ec6a2b91f7d9dc.setIcon(icon_87fbe7b5df160bec7137b62c039c0920);
+        
+    
+        var popup_afadd5f575e18be653bcbb6d13c56e00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_029c0a77d1f76e775e05fc09b96a22ea = $(`<div id="html_029c0a77d1f76e775e05fc09b96a22ea" style="width: 100.0%; height: 100.0%;">劍潭</div>`)[0];
+            popup_afadd5f575e18be653bcbb6d13c56e00.setContent(html_029c0a77d1f76e775e05fc09b96a22ea);
+        
+
+        marker_21aace47cfd1f6b609ec6a2b91f7d9dc.bindPopup(popup_afadd5f575e18be653bcbb6d13c56e00)
+        ;
+
+        
+    
+    
+            var poly_line_1cadd4eeff16330f3b56fc31ba312a89 = L.polyline(
+                [[25.0525, 121.5205], [25.0621, 121.5196], [25.0882, 121.5251]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_c25e1b9ab7ff4a03aff8b92b7172e827);
+        
+</script>
+</html>

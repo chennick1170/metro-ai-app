@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1edc573f17459c4576b88f9d203f5319 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1edc573f17459c4576b88f9d203f5319" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1edc573f17459c4576b88f9d203f5319 = L.map(
+                "map_1edc573f17459c4576b88f9d203f5319",
+                {
+                    center: [25.052317, 121.544429],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5a7ae3e302b21ff6a31aa19ddd0bd994 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1edc573f17459c4576b88f9d203f5319);
+        
+    
+            var marker_fdacb17e58d6d3a9050ed7203fbd752f = L.marker(
+                [25.052317, 121.544429],
+                {}
+            ).addTo(map_1edc573f17459c4576b88f9d203f5319);
+        
+    
+            var icon_05812b09a73c9b2e0a108acc95e2a6ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_fdacb17e58d6d3a9050ed7203fbd752f.setIcon(icon_05812b09a73c9b2e0a108acc95e2a6ce);
+        
+    
+        var popup_4a74c58cb289e7575f1a87d1b8c32ce0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34c32960195279e725be8bb41ef3afe8 = $(`<div id="html_34c32960195279e725be8bb41ef3afe8" style="width: 100.0%; height: 100.0%;">南京復興</div>`)[0];
+            popup_4a74c58cb289e7575f1a87d1b8c32ce0.setContent(html_34c32960195279e725be8bb41ef3afe8);
+        
+
+        marker_fdacb17e58d6d3a9050ed7203fbd752f.bindPopup(popup_4a74c58cb289e7575f1a87d1b8c32ce0)
+        ;
+
+        
+    
+    
+            var marker_df93e2f00f6ba4dd777daf0cd70f39ee = L.marker(
+                [25.0422, 121.5314],
+                {}
+            ).addTo(map_1edc573f17459c4576b88f9d203f5319);
+        
+    
+            var icon_0676e0d6205033d96f6298439298e1cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_df93e2f00f6ba4dd777daf0cd70f39ee.setIcon(icon_0676e0d6205033d96f6298439298e1cb);
+        
+    
+        var popup_43047e96217ea96c2e8994a09396e68f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b28ec440025d17b2233ab89114ab5f9 = $(`<div id="html_8b28ec440025d17b2233ab89114ab5f9" style="width: 100.0%; height: 100.0%;">忠孝新生</div>`)[0];
+            popup_43047e96217ea96c2e8994a09396e68f.setContent(html_8b28ec440025d17b2233ab89114ab5f9);
+        
+
+        marker_df93e2f00f6ba4dd777daf0cd70f39ee.bindPopup(popup_43047e96217ea96c2e8994a09396e68f)
+        ;
+
+        
+    
+    
+            var marker_a3764b419564eeffa463370ef3b7bc19 = L.marker(
+                [25.0478, 121.517],
+                {}
+            ).addTo(map_1edc573f17459c4576b88f9d203f5319);
+        
+    
+            var icon_ee1bf22021240adf7c61d95292acc570 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_a3764b419564eeffa463370ef3b7bc19.setIcon(icon_ee1bf22021240adf7c61d95292acc570);
+        
+    
+        var popup_637eaf516e0c256c5c60dc660603bee4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fe337fd19b3e9bdb825bbd2341e1e58 = $(`<div id="html_9fe337fd19b3e9bdb825bbd2341e1e58" style="width: 100.0%; height: 100.0%;">台北車站</div>`)[0];
+            popup_637eaf516e0c256c5c60dc660603bee4.setContent(html_9fe337fd19b3e9bdb825bbd2341e1e58);
+        
+
+        marker_a3764b419564eeffa463370ef3b7bc19.bindPopup(popup_637eaf516e0c256c5c60dc660603bee4)
+        ;
+
+        
+    
+    
+            var poly_line_67aabf5200d70fc2aa7b1518aff3a1e9 = L.polyline(
+                [[25.052317, 121.544429], [25.0422, 121.5314], [25.0478, 121.517]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_1edc573f17459c4576b88f9d203f5319);
+        
+</script>
+</html>

@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>Metro AI App 冠軍級首頁</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; font-family: 'Arial', sans-serif; background: #111; color: white; overflow: hidden; }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+      text-align: center;
+      padding: 16px;
+      font-size: 22px;
+      font-weight: bold;
+      z-index: 10;
+    }
+
+    .reel-container {
+      margin-top: 70px;
+      height: calc(100vh - 70px);
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+
+    .reel {
+      scroll-snap-align: start;
+      position: relative;
+      height: 100vh;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .info {
+      position: absolute;
+      bottom: 80px;
+      left: 16px;
+      font-size: 18px;
+      text-shadow: 0 0 5px black;
+    }
+
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: white;
+      color: #6a1b9a;
+      font-size: 20px;
+      padding: 16px;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+      z-index: 20;
+      cursor: pointer;
+    }
+
+    .menu {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 15;
+    }
+
+    .menu button {
+      background: #222;
+      color: white;
+      border: 1px solid #6a1b9a;
+      border-radius: 20px;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      color: #ccc;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 6px;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <header>🏆 Metro AI App 冠軍首頁</header>
+
+  <div class="reel-container">
+    <div class="reel">
+      <video autoplay loop muted playsinline>
+        <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+      </video>
+      <div class="info">🚇 台北車站｜美食推薦｜路線：復興 ➝ 忠孝新生 ➝ 台北車站</div>
+    </div>
+    <div class="reel">
+      <video autoplay loop muted playsinline>
+        <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+      </video>
+      <div class="info">🌃 劍潭夜市｜夜市吃爆｜路線：中山 ➝ 民權西路 ➝ 劍潭</div>
+    </div>
+    <div class="reel">
+      <video autoplay loop muted playsinline>
+        <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
+      </video>
+      <div class="info">📸 台北101｜文青拍照點｜路線：忠孝復興 ➝ 信義安和 ➝ 台北101</div>
+    </div>
+  </div>
+
+  <div class="menu" id="menu" style="display: none;">
+    <button onclick="alert('🔁 啟動動線規劃')">🗺️ 動線規劃</button>
+    <button onclick="alert('🚌 顯示公車追蹤')">🚌 公車追蹤</button>
+    <button onclick="alert('🚲 查詢 YouBike')">🚲 公共自行車</button>
+    <button onclick="alert('🚇 展開捷運圖')">🚇 捷運路線圖</button>
+  </div>
+
+  <div class="floating-btn" onclick="toggleMenu()">☰</div>
+
+  <div style='margin-top:16px;'><h4>台北車站｜美食推薦</h4><iframe src='route_map_taipei.html' width='100%' height='400px' style='border:none;'></iframe></div>
+<div style='margin-top:16px;'><h4>劍潭夜市｜夜市吃爆</h4><iframe src='route_map_nightmarket.html' width='100%' height='400px' style='border:none;'></iframe></div>
+<div style='margin-top:16px;'><h4>台北101｜文青拍照點</h4><iframe src='route_map_101spot.html' width='100%' height='400px' style='border:none;'></iframe></div>
+<footer>© Metro AI App - 由 AI 驅動的通勤助理 · Powered by Nick</footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = (menu.style.display === 'none') ? 'flex' : 'none';
+    }
+  </script>
+</body>
+</html>
